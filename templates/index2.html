@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+</head>
+<body>
+    <h2>Data Mahasiswa</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Tempat Tinggal</th>
+            <th>Tanggal Lahir</th>
+            <th>Kampus</th>
+        </tr>
+        
+        {% for mhs in data %}
+        <tr>
+            <td>{{ mhs[0] }}</td>
+            <td>{{ mhs[1] }}</td>
+            <td>{{ mhs[2] }}</td>
+            <td>{{ mhs[3] }}</td>
+            <td>{{ mhs[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
